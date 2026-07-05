@@ -177,3 +177,11 @@ SELECT ci.name_city AS ciudad, COUNT(c.cx) AS total_clientes
 FROM customer c
 INNER JOIN city ci ON c.city_id = ci.ct
 GROUP BY ci.name_city;
+
+UPDATE inventary
+SET stock_quantity = 45
+WHERE inventary.iv= 1;
+
+
+DELETE FROM customer
+WHERE customer.cx = 5;
