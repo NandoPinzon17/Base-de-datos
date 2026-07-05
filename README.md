@@ -1,43 +1,26 @@
-# Verificar si PostgreSQL esta Instalado
+# 🎮 Video Game Store - Relational Database Project
 
-```bash
-psql --version
-```
-
-si esta instalado, veras algo similar a:
-
-psql ( postgreSQL ) 17.0
-
-si no sale, procederemos a instalar la base de datos.
-
-# Instalación
-
-1. Actualizamos repositorios linux
-
-```bash
-sudo apt update
-```
+This project consists of the design and implementation of a relational database to manage inventories, physical stores, customers, and gaming platforms across Colombia. The system is fully containerized using Docker to ensure a fast, consistent, and reliable deployment environment.
 
 ---
 
-2. ¿ Como instalar PostgreSQL ?
+## 🛠️ Technologies Used
 
-```bash
-sudo apt install postgresql postgresql-contrib -y
-```
-
----
-
-3. Verificamos que el servicio este activo:
-
-```bash
-sudo systemct1 status postgresql
-```
+*   **Database Engine:** PostgreSQL 15+
+*   **Containerization:** Docker & Docker Compose
+*   **Development Tools:** DataGrip / VS Code
 
 ---
 
-# Comprobamos que este instalado exitosamente
+## 🚀 Deployment Instructions
+
+Follow these exact steps to spin up the development environment on your local machine:
+
+### 1. Prerequisites
+Make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and that the service is running.
+
+### 2. Start the Container
+Open a terminal in the root directory of the project (where your `docker-compose.yml` file is located) and run the following command:
 
 ```bash
-psql --version
-```
+docker-compose up -d
